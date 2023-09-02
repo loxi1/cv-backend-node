@@ -45,8 +45,8 @@ import Imagen from "@components/servicios/Image.astro"
                 </div>
                 <div class="hidden sm:block sm:basis-56">
                     <img
-                        alt="Trámites electronícos"
-                        src=`imagenes/portafolio/${image}`
+                        alt={title}
+                        src=`/imagenes/portafolio/${image}`
                         class="aspect-square h-full w-full object-cover hover:scale-105"
                         />
                 </div>
@@ -78,7 +78,7 @@ import Imagen from "@components/servicios/Image.astro"
                                 <span
                                     class="whitespace-nowrap rounded-full ml-2 bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
                                 >
-                                    <img class="inline-block w-5 text-principal" src=`imagenes/portafolio/${imagen}.svg` alt={name}>
+                                    <img class="inline-block w-5 text-principal" src=`/imagenes/portafolio/${imagen}.svg` alt={name}>
                                     {name}
                                 </span>
                                 </>
@@ -86,7 +86,7 @@ import Imagen from "@components/servicios/Image.astro"
                         }
                         
                         {
-                            url && <Imagen img={"imagenes/portafolio/url.svg"} nombre={url}></Imagen>
+                            url && <Imagen img={"/imagenes/portafolio/url.svg"} nombre={url}></Imagen>
                         }
                     </div>
                 </div>
