@@ -15,9 +15,7 @@ export default defineConfig({
         intentSelector: [
           "a[href^='/']", 
           "a[href^='/proyectos']",
-          "a[href^='/servicios/tramites']",
-          "a[href^='/servicios/asesoria']",
-          "a[href^='/servicios/adicionales']",
+          "a[href^='/acercademi']",
           "a[href^='/contactanos']",
         ],
       }
