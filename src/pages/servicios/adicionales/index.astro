@@ -1,0 +1,16 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Banner from "@components/principal/Banner.astro";
+import Contenedor from "@components/principal/Contenedor.astro";
+import Detalleservicio from "@components/servicios/Detalleservicio.astro";
+import { adicionales } from "@utils/data";
+---
+
+<Layout title="Servicios - Ascesoria" desc="Servicio de asesoria INDECI">
+  <main>
+    <Banner title="Servicios / Adicionales" paddin="32" img="banner/banner-energia.jpg" />
+  </main>
+  <Contenedor>
+    <Detalleservicio {...adicionales} />
+  </Contenedor>
+</Layout>
