@@ -47,7 +47,7 @@ import Imagen from "@components/servicios/Image.astro"
                     <img
                         alt={title}
                         src=`/imagenes/portafolio/${image}`
-                        class="aspect-square h-full w-full object-cover hover:scale-105"
+                        class="aspect-square h-full w-full object-cover hover:scale-150 clickmodal"
                         />
                 </div>
                 <div class="flex flex-1 flex-col justify-between">
@@ -95,3 +95,27 @@ import Imagen from "@components/servicios/Image.astro"
     ))
 }
 
+<script>
+    // Get the modal by id
+    var modal = document.getElementById("modal");
+
+    // Get the modal image tag
+    var modalImg = document.getElementById("modal-img");
+
+    // Get class image
+    let clickmodal = document.querySelectorAll(".clickmodal");
+
+    //Muestra la imagen
+    clickmodal.forEach(el => el.addEventListener('click', event => {
+        console.log(event.target.getAttribute("src"));
+        modal.classList.remove('hidden');
+        modalImg.src = event.target.getAttribute("src");
+    }));
+
+    let closeModal = document.querySelectorAll(".closeModal")
+
+    //Cierra el modal
+    closeModal.forEach(el => el.addEventListener('click', event => {
+        modal.classList.add('hidden');
+    }))
+</script>

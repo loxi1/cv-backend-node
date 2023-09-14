@@ -65,6 +65,17 @@ const makeTitle = title
               display: block;
             }
         </style>
+        <!-- The Modal -->
+        <div id="modal"
+        class="hidden fixed top-0 left-0 z-50 w-screen h-screen bg-black/70 justify-center items-center closeModal">
+
+        <!-- The close button -->
+        <a class="fixed z-90 top-6 right-8 text-white text-5xl font-bold closeModal" href="javascript:void(0)"
+            onclick="closeModal()">&times;</a>
+
+        <!-- A big image will be displayed here -->
+        <img id="modal-img" class="max-w-auto max-h-auto object-cover mx-auto" />
+        </div>
     </body>
 </html>
 <style>
