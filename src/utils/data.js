@@ -32,10 +32,10 @@ export const footerMenu = {
 export const portafolio = {
     proyectos: [
         { 
-            title: 'jlcelectricistas', 
+            title: 'Accesibilida de establecimiento', 
             description: 'Grupo de ingenieros electricos que brindan servicios de: diseño de proyectos eléctricos en media y baja tensión, ingeniería de detalles, Memorias Descriptivas, Memorias de Cálculos, Especificaciones Técnicas y planos eléctricos en general', dia: '', anio: '2023', mes: 'Marzo', 
             git: 'https://github.com/lemcok/equipo4-ed4-backend', 
-            image: 'accesibilidad-de-lugar.jpeg', 
+            image: 'accesibilidad-de-lugar.png', 
             "skills": [
                 {
                     "name": "Node",
@@ -53,11 +53,20 @@ export const portafolio = {
                     "name": "Fastify",
                     "imagen": "fastify"
                 },
+                {
+                    "name": "JWT",
+                    "imagen": "jwt"
+
+                },
+                {
+                    "name": "Fastify",
+                    "imagen": "fastify"
+                }
             ],
             url: '' 
         },
         { 
-            title: 'Accesibilida de establecimiento ', 
+            title: 'jlcelectricistas', 
             description: 'Averiguar si un lugar es ascequible para discapacitados, se hace consultas al api de google y se registra valoración y comentario en caso este logueado el usuario.', 
             dia: '', 
             anio: '2023', 
@@ -103,6 +112,72 @@ export const portafolio = {
                 },
             ],
             url: 'https://confeccionesadler.com/'
-        },            
+        },
+        {
+            title: 'Practica Node (Biblioteca)',
+            description: 'CURD nodejs',
+            dia: '',
+            anio: '2023',
+            mes: 'Febrero',
+            git: 'https://github.com/loxi1/node-prisma',
+            image: 'prueba-express.png',
+            "skills" : [
+                {
+                    "name": "Node",
+                    "imagen": "nodejs"
+                },
+                {
+                    "name": "Typescript",
+                    "imagen": "ts"
+                },
+                {
+                    "name": "Typescript",
+                    "imagen": "ts"
+                },
+                {
+                    "name": "Postgresql",
+                    "imagen": "postgresql"
+                },
+                {
+                    "name": "Prisma",
+                    "imagen": "prisma"
+
+                },
+                {
+                    "name": "Swagger",
+                    "imagen": "swagger"
+
+                }
+            ]
+        }   ,
+        {
+            title: 'Practica Node (Login)',
+            description: 'CURD nodejs',
+            dia: '',
+            anio: '2023',
+            mes: 'Agosto',
+            git: 'https://github.com/loxi1/jlc-inventario',
+            image: 'jlc-inventario.png',
+            "skills" : [
+                {
+                    "name": "Node",
+                    "imagen": "nodejs"
+                },
+                {
+                    "name": "Express",
+                    "imagen": "express"
+
+                },
+                {
+                    "name": "Javascript",
+                    "imagen": "javascript"
+                },
+                {
+                    "name": "MySQL",
+                    "imagen": "mysql"
+
+                }
+            ]
+        }        
     ]
 }
