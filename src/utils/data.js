@@ -32,9 +32,13 @@ export const footerMenu = {
 export const portafolio = {
     proyectos: [
         { 
-            title: 'Accesibilida de establecimiento', 
-            description: 'Grupo de ingenieros electricos que brindan servicios de: diseño de proyectos eléctricos en media y baja tensión, ingeniería de detalles, Memorias Descriptivas, Memorias de Cálculos, Especificaciones Técnicas y planos eléctricos en general', dia: '', anio: '2023', mes: 'Marzo', 
-            git: 'https://github.com/lemcok/equipo4-ed4-backend', 
+            title: 'Accesibilidad de establecimiento', 
+            description: 'Averiguar si un lugar es ascequible para discapacitados, se hace consultas al api de google y se registra valoración y comentario en caso este logueado el usuario.', 
+            dia: '',
+            anio: '2023',
+            mes: 'Julio',
+            git: 'https://github.com/lemcok/equipo4-ed4-backend',
+            tipo: "back",
             image: 'accesibilidad-de-lugar.png', 
             "skills": [
                 {
@@ -61,66 +65,23 @@ export const portafolio = {
                 {
                     "name": "Fastify",
                     "imagen": "fastify"
+                },
+                {
+                    "name": "Docker",
+                    "imagen": "docker"
                 }
             ],
             url: '' 
         },
-        { 
-            title: 'jlcelectricistas', 
-            description: 'Averiguar si un lugar es ascequible para discapacitados, se hace consultas al api de google y se registra valoración y comentario en caso este logueado el usuario.', 
-            dia: '', 
-            anio: '2023', 
-            mes: 'Mayo', 
-            git: 'https://github.com/loxi1/jlc-consultora-proyectos', 
-            image: 'jlc-electricistas.png', 
-            "skills": [
-                {
-                    "name": "Astro",
-                    "imagen": "astro"
-                },
-                {
-                    "name": "SendGrid",
-                    "imagen": "sendgrid"
-                },
-                {
-                    "name": "Tailwind",
-                    "imagen": "tailwind"
-                },
-            ],
-            url: 'https://www.jlcelectricistas.com/'
-        },
-        { 
-            title: 'Confecciones adler', 
-            description: 'Emprendimiento del rubro textil dedicada al corte, confección y bordados.', 
-            dia: '', 
-            anio: '2023', 
-            mes: 'Febreo', 
-            git: 'https://github.com/loxi1/Adler', 
-            image: 'confeciones-adler.png',
-            "skills": [
-                {
-                    "name": "Astro",
-                    "imagen": "astro"
-                },
-                {
-                    "name": "SendGrid",
-                    "imagen": "sendgrid"
-                },
-                {
-                    "name": "Tailwind",
-                    "imagen": "tailwind"
-                },
-            ],
-            url: 'https://confeccionesadler.com/'
-        },
         {
             title: 'Practica Node (Biblioteca)',
-            description: 'CURD nodejs',
+            description: 'CURD de curso y usuario, relizado con prisma',
             dia: '',
             anio: '2023',
             mes: 'Febrero',
             git: 'https://github.com/loxi1/node-prisma',
             image: 'prueba-express.png',
+            tipo: "back",
             "skills" : [
                 {
                     "name": "Node",
@@ -152,12 +113,13 @@ export const portafolio = {
         }   ,
         {
             title: 'Practica Node (Login)',
-            description: 'CURD nodejs',
+            description: 'CURD de usuario, rol y categoria, usando prisma, exprees y login',
             dia: '',
             anio: '2023',
             mes: 'Agosto',
             git: 'https://github.com/loxi1/jlc-inventario',
             image: 'jlc-inventario.png',
+            tipo: "back",
             "skills" : [
                 {
                     "name": "Node",
@@ -176,8 +138,69 @@ export const portafolio = {
                     "name": "MySQL",
                     "imagen": "mysql"
 
+                },
+                {
+                    "name": "JWT",
+                    "imagen": "jwt"
+
                 }
             ]
+        },
+        { 
+            title: 'jlcelectricistas', 
+            description: 'Grupo de ingenieros electricos que brindan servicios de: diseño de proyectos eléctricos en media y baja tensión, ingeniería de detalles, Memorias Descriptivas, Memorias de Cálculos, Especificaciones Técnicas y planos eléctricos en general', dia: '', anio: '2023', mes: 'Marzo', 
+            dia: '', 
+            anio: '2023', 
+            mes: 'Mayo', 
+            git: 'https://github.com/loxi1/jlc-consultora-proyectos', 
+            image: 'jlc-electricistas.png', 
+            tipo: "front",
+            "skills": [
+                {
+                    "name": "Astro",
+                    "imagen": "astro"
+                },
+                {
+                    "name": "SendGrid",
+                    "imagen": "sendgrid"
+                },
+                {
+                    "name": "Tailwind",
+                    "imagen": "tailwind"
+                },
+            ],
+            url: 'https://www.jlcelectricistas.com/'
+        },
+        { 
+            title: 'Confecciones adler', 
+            description: 'Emprendimiento del rubro textil dedicada al corte, confección y bordados.', 
+            dia: '', 
+            anio: '2023', 
+            mes: 'Febreo', 
+            git: 'https://github.com/loxi1/Adler', 
+            image: 'confeciones-adler.png',
+            tipo: "front",
+            "skills": [
+                {
+                    "name": "Astro",
+                    "imagen": "astro"
+                },
+                {
+                    "name": "SendGrid",
+                    "imagen": "sendgrid"
+                },
+                {
+                    "name": "Tailwind",
+                    "imagen": "tailwind"
+                },
+            ],
+            url: 'https://confeccionesadler.com/'
         }        
+    ]
+}
+
+export const skills = {
+    habilidades: [
+        "nodejs","prisma", "fastify", "express", "mysql", "postgresql", "docker", "aws"
     ]
 }
